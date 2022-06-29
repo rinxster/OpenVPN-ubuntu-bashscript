@@ -1,15 +1,15 @@
 # !/bin/bash
 #install updates and required programs
-yes | apt update
-yes | apt upgrade
-yes| apt install mc && apt install fail2ban
+yes | sudo apt update
+yes | sudo apt upgrade
+yes| sudo apt install mc && apt install fail2ban
 #configure fail2ban
 sudo cp /etc/fail2ban/jail.{conf,local}
-sed -i -e 's/bantime  = 10m/bantime  = 1d/g' /etc/fail2ban/jail.local
+sudo sed -i -e 's/bantime  = 10m/bantime  = 1d/g' /etc/fail2ban/jail.local
 sudo systemctl restart fail2ban
-systemctl status fail2ban
+sudo systemctl status fail2ban
 #configure and start ufw
-yes | apt install ufw
+yes | sudo apt install ufw
 sudo ufw default deny incoming
 sudo ufw default allow outgoing
 sudo ufw allow ssh
