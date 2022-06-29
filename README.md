@@ -1,6 +1,7 @@
-# OpenVPN-ubuntu-bashscript
+# OpenVPN bashscript for ubuntu
+
 This short bash script patches server + installs and configures ufw, fail2ban and open vpn server.
-Just copy paste command below and run it on your Ubuntu.
+Just copy paste command below and run it on your vanilla Ubuntu server that is just deployed on your cloud to make it OpenVPN server.
 
 ```
 sudo wget https://raw.githubusercontent.com/rinxster/OpenVPN-ubuntu-bashscript/main/vpn-srv-config.sh -O vpn-srv-config.sh && sudo chmod +x vpn-srv-config.sh && sudo bash vpn-srv-config.sh
