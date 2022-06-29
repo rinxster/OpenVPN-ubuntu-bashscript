@@ -3,11 +3,13 @@
 yes | sudo apt update
 yes | sudo apt upgrade
 yes| sudo apt install mc && apt install fail2ban
+
 #configure fail2ban
 sudo cp /etc/fail2ban/jail.{conf,local}
 sudo sed -i -e 's/bantime  = 10m/bantime  = 1d/g' /etc/fail2ban/jail.local
 sudo systemctl restart fail2ban
 sudo systemctl status fail2ban
+
 #configure and start ufw
 yes | sudo apt install ufw
 sudo ufw default deny incoming
