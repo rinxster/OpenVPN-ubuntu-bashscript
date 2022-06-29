@@ -18,7 +18,7 @@ sudo ufw allow 1194
 yes | sudo ufw enable
 sudo ufw status verbose
 
-# pause to see intermediate result
+# pause to see intermediate result. Everything is ready to proceed with OpenVPN installlation
 read -n1 -s -r -p $'Press space to continue...\n' key
 
 #download and install openvpn on server
