@@ -23,7 +23,7 @@ sudo ufw status verbose
 # pause to see intermediate result. Everything is ready to proceed with OpenVPN installlation
 read -n1 -s -r -p $'Press space to continue...\n' key
 
-#download and install openvpn on server
+#download openvpn installation script and install openvpn on server
 wget https://git.io/vpn -O openvpn-install.sh
 sudo chmod +x openvpn-install.sh
 sudo bash openvpn-install.sh
