@@ -1,5 +1,5 @@
 # OpenVPN-ubuntu-bashscript
+This short script to patch server + installs and configures ufw, fail2ban and open vpn server
 
-## example to be used to download, install and run script
-
-wget https://git.io/vpn -O openvpn-install.sh && sudo chmod +x openvpn-install.sh && sudo bash openvpn-install.sh
+## open your Ubintu console and execure following one liner.
+sudo wget https://raw.githubusercontent.com/rinxster/OpenVPN-ubuntu-bashscript/main/vpn-srv-config.sh -O vpn-srv-config.sh && sudo chmod +x vpn-srv-config.sh && sudo bash vpn-srv-config.sh
