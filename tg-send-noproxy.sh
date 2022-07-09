@@ -9,15 +9,15 @@ TG_BOT_ID=5530833487:AAGcAmDa9DBmPMdgClfirRA4XCtyy9fFWxE
 TG_CHAT_ID=327930475
 #
 # sending text-message
-curl --socks5-basic \
--X POST https://api.telegram.org/bot$TG_BOT_ID/sendMessage -d chat_id=$TG_CHAT_ID -d \
-text="$SENDME"
+#curl --socks5-basic \
+#-X POST https://api.telegram.org/bot$TG_BOT_ID/sendMessage -d chat_id=$TG_CHAT_ID -d \
+#text="$SENDME"
 #
 # sending file-message
 cat $SENDME > /tmp/tg-export && \
 curl --socks5-basic \
 -s -X POST https://api.telegram.org/bot$TG_BOT_ID/sendDocument -F chat_id=$TG_CHAT_ID -F \
-document=@/tmp/tg-export
+document=@$SENDME
 #
 # cleaning
 rm -f /tmp/tg-export
