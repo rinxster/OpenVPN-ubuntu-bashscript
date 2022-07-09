@@ -34,3 +34,8 @@ read -n1 -s -r -p $'Everything is ready to proceed with OpenVPN installlation. P
 wget https://git.io/vpn -O openvpn-install.sh
 sudo chmod +x openvpn-install.sh
 sudo bash openvpn-install.sh
+
+#disable ipv6 for security as not used and reboot the server
+sed -i '/GRUB_CMDLINE_LINUX/ s/"$/ ipv6.disable=1"/' /etc/default/grub
+sudo update-grub
+sudo shutdown -r +1
