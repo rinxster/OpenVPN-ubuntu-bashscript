@@ -5,8 +5,8 @@
 # ..."folder non-exist" errors may be ignored
 #
 SENDME=$1
-TG_BOT_ID=5530833487:AAGcAmDa9DBmPMdgClfirRA4XCtyy9fFWxE
-TG_CHAT_ID=327930475
+TG_BOT_ID=<ID>
+TG_CHAT_ID=<ID>
 #
 # sending text-message
 #curl --socks5-basic \
