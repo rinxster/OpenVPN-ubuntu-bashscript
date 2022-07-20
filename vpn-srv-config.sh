@@ -2,7 +2,7 @@
 #install updates and required programs
 yes | sudo apt update
 yes | sudo apt upgrade
-yes | sudo apt install mc && apt install fail2ban
+yes | sudo apt install mc && apt install fail2ban && apt install curl
 
 #configure and setup regular  automatic updates
 yes | sudo apt install unattended-upgrades
