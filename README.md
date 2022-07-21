@@ -8,9 +8,5 @@ Just copy paste command below and run it on your vanilla Ubuntu server that is j
 sudo wget https://raw.githubusercontent.com/rinxster/OpenVPN-ubuntu-bashscript/main/vpn-srv-config.sh -O vpn-srv-config.sh && sudo chmod +x vpn-srv-config.sh && sudo bash vpn-srv-config.sh
 ```
 
-Telegram send open VPN file
-```
-sudo wget https://raw.githubusercontent.com/rinxster/OpenVPN-ubuntu-bashscript/main/tg-send-noproxy.sh -O tg-send-noproxy.sh && sudo chmod +x tg-send-noproxy.sh
-```
 
 Tested and works well on Ubuntu 20 LTS.
