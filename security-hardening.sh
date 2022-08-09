@@ -13,7 +13,7 @@ read -n1 -s -r -p $'Everything is ready to disable ipv6. Press space to continue
 sed -i '/GRUB_CMDLINE_LINUX/ s/"$/ ipv6.disable=1"/' /etc/default/grub && sudo update-grub
 
 # pause to see intermediate result.
-read -n1 -s -r -p $'Everything is ready to change port to 222. Press space to continue...\n' key
+read -n1 -s -r -p $'Everything is ready to change port to 2222. Press space to continue...\n' key
 
 sudo ufw allow 2222 && sudo sed -i -e 's/#Port 22/Port 2222/g' /etc/ssh/sshd_config && service sshd reload && sudo ufw status
 
