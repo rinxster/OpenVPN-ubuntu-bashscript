@@ -7,12 +7,4 @@ Just copy paste command below and run it on your vanilla Ubuntu server that is j
 ```
 sudo wget https://raw.githubusercontent.com/rinxster/OpenVPN-ubuntu-bashscript/main/vpn-srv-config.sh -O vpn-srv-config.sh && sudo chmod +x vpn-srv-config.sh && sudo bash vpn-srv-config.sh
 ```
-Tested and works well on Ubuntu 20 LTS.
-
-
-NB: old servers fix:
-```
-sudo wget https://raw.githubusercontent.com/rinxster/OpenVPN-ubuntu-bashscript/main/security-hardening.sh -O security-hardening.sh && sudo chmod +x security-hardening.sh && sudo bash security-hardening.sh
-```
-
-
+Tested and works well on Ubuntu 20.04 LTS.
